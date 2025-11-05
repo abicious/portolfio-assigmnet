@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Ahsan - Portfolio</title>
+    <link rel="stylesheet" href="abc.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="mypic.jpg" alt="logo" />
+          <span>Abdullah.</span>
+        </div>
+
+        <button
+          class="menu-btn"
+          onclick="document.querySelector('.nav-links').classList.toggle('show')"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <img src="mypic.jpg" class="profile-img" alt="Abdullah" />
+      <h1>Hi, I'm <span>Abdullah Ahsan</span></h1>
+      <h3>Full Stack Web Developer & App Developer</h3>
+      <p>
+        I build web and mobile applications that are fast, clean, and
+        user-friendly.
+      </p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Helping Hand Service App</h3>
+          <p>
+            A service booking MERN Stack application providing users multiple
+            service categories with scheduling.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Karachi Fix Complaint Portal</h3>
+          <p>
+            A municipal issue reporting portal with login, status tracking &
+            MongoDB backend.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Rock Paper Scissors Game</h3>
+          <p>
+            A fun JavaScript game with score saving and autoplay mode for
+            challenge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Abdullah Ahsan | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
